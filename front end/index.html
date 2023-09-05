@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Your Website</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Your Logo</div>
+            <ul class="navbar">
+                <li><a href="#" onclick="navigateTo('home')">Home</a></li>
+                <li><a href="#" onclick="navigateTo('courses')">Courses</a></li>
+                <li><a href="#" onclick="navigateTo('mentors')">Mentors</a></li>
+                <li><a href="#" onclick="navigateTo('about')">About</a></li>
+                <li><a href="#" onclick="navigateTo('login')">Login</a></li>
+                <li><a href="#" onclick="navigateTo('signup')">Signup</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Your main content here -->
+    </main>
+
+    <footer>
+        <!-- Footer content here -->
+    </footer>
+
+    <script>
+        function navigateTo(page) {
+            switch (page) {
+                case 'home':
+                    window.location.href = 'index.html';
+                    break;
+                case 'courses':
+                    window.location.href = 'courses.html';
+                    break;
+                case 'mentors':
+                    window.location.href = 'mentors.html';
+                    break;
+                case 'about':
+                    window.location.href = 'about.html';
+                    break;
+                case 'login':
+                    window.location.href = 'login.html';
+                    break;
+                case 'signup':
+                    window.location.href = 'signup.html';
+                    break;
+                default:
+                    break;
+            }
+        }
+    </script>
+</body>
+</html>
